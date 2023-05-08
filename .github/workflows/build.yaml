@@ -13,13 +13,13 @@ jobs:
    - name: check maven version
      run: mvn -v
    - name: packaging with pom
-     run: mvn archetype:generate --file pom.xml
+     run: mvn --help
   #  - name: compile java file in main
   #    run: mvn compile
   #  - name: packaging the maven code into jar file
   #    run: mvn package
-   - name: listing file in directory
-     run: ls -a
+  #  - name: listing file in directory
+  #    run: ls -a
   #  - name: change directory to target folder and list files
   #    run: |
   #     cd target
