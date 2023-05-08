@@ -13,7 +13,7 @@ jobs:
    - name: check maven version
      run: mvn -v
    - name: packaging with pom
-     run: mvn -B package --file pom.xml
+     run: mvn archetype:generate --file pom.xml
   #  - name: compile java file in main
   #    run: mvn compile
   #  - name: packaging the maven code into jar file
