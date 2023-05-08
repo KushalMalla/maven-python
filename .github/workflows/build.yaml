@@ -1,0 +1,26 @@
+name: maven-build
+on: push
+jobs:
+ build-package:
+  runs-on: ubuntu-latest
+  steps:
+   - name: checkout code in repo
+     uses: actions/checkout@v3
+   - name: setup java sdk
+     uses: actions/setup-java@v1
+     with:
+      java-version: 1.8
+   - name: check maven version
+     run: mvn -v
+   - name: packaging with pom
+     run: mvn -B package --file pom.xml
+  #  - name: compile java file in main
+  #    run: mvn compile
+  #  - name: packaging the maven code into jar file
+  #    run: mvn package
+  #  - name: listing file in directory
+  #    run: ls -a
+  #  - name: change directory to target folder and list files
+  #    run: |
+  #     cd target
+  #     java -jar pattern-1.0-SNAPSHOT.jar
