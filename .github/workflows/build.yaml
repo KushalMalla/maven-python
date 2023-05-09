@@ -12,8 +12,11 @@ jobs:
       java-version: 1.8
    - name: check maven version
      run: mvn -v
-   - name: packaging with pom
-     run: mvn --help
+   - name: Initializing
+     run: mvn init
+   - name: run compile
+     run: mvn compile
+
   #  - name: compile java file in main
   #    run: mvn compile
   #  - name: packaging the maven code into jar file
