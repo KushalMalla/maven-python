@@ -14,6 +14,8 @@ jobs:
      run: mvn -v
    - name: run compile
      run: mvn compile
+   - name: listing files
+     run: ls -a
 
   #  - name: compile java file in main
   #    run: mvn compile
