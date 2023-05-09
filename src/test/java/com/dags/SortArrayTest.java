@@ -3,6 +3,7 @@ import org.junit.jupiter.api.Test;
 
 
 public class SortArrayTest{
+    @Test
     public void sortArray(){
         SortArray sortTests = new SortArray();
         int[] array = {5, 8, 3, 9, 1, 6};
