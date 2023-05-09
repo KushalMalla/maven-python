@@ -10,5 +10,6 @@ public class SortArray{
                 }
             }
         }
+        return array;
     }
 }
