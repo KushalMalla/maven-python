@@ -37,19 +37,14 @@
           </archive>
         </configuration>
       </plugin>
-    </plugins>
-  </build>
 
-  <build>
-    <pluginManagement>
-      <plugins>
-        <plugin>
+      <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-surefire-plugin</artifactId>
           <version>3.1.0</version>
-        </plugin>
-      </plugins>
-    </pluginManagement>
+      </plugin>
+
+    </plugins>
   </build>
   
 </project>
