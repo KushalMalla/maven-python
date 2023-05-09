@@ -12,18 +12,12 @@ jobs:
       java-version: 1.8
    - name: check maven version
      run: mvn -v
-   - name: run compile
+   - name: compile java file in main
      run: mvn compile
-   - name: listing files
+   - name: packaging the maven code into jar file
+     run: mvn package
+   - name: listing file in directory
      run: ls -a
-
-  #  - name: compile java file in main
-  #    run: mvn compile
-  #  - name: packaging the maven code into jar file
-  #    run: mvn package
-  #  - name: listing file in directory
-  #    run: ls -a
-  #  - name: change directory to target folder and list files
-  #    run: |
-  #     cd target
-  #     java -jar pattern-1.0-SNAPSHOT.jar
+   - name: change directory to target folder and list files
+     run: |
+      cd target
