@@ -15,7 +15,9 @@ jobs:
    - name: compile java file in main
      run: mvn compile
    - name: test code with test cases
-     run: mvn test
+     run: | 
+      mvn test-compile
+      mvn test
    - name: packaging the maven code into jar file
      run: mvn package
    - name: listing file in directory
