@@ -25,3 +25,4 @@ jobs:
    - name: change directory to target folder and list files
      run: |
       cd target
+      ls -a
