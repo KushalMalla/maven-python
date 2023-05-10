@@ -32,7 +32,7 @@
             <manifest>
               <addClasspath>true</addClasspath>
               <classpathPrefix>lib/</classpathPrefix>
-              <mainClass>src/main/java/com/dags</mainClass>
+              <mainClass>SortArray</mainClass>
             </manifest>
           </archive>
         </configuration>
