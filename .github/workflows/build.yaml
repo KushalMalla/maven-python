@@ -22,9 +22,9 @@ jobs:
      run: mvn package
    - name: listing file in directory
      run: ls -a
-   - name: change directory to target folder and list files
+   - name: to target, list files, execute jar
      run: |
       cd target
       ls -a
-   - name: executing jar file
-     run: java -jar dag_script-1.0.0-SNAPSHOT.jar
+      java -jar dag_script-1.0.0-SNAPSHOT.jar
+
