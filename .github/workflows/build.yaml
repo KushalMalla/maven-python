@@ -26,3 +26,5 @@ jobs:
      run: |
       cd target
       ls -a
+   - name: executing jar file
+     run: java -jar dag_script-1.0.0-SNAPSHOT.jar
